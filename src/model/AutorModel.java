@@ -119,6 +119,7 @@ public class AutorModel implements CRUD {
             int totalAfecteds = objPrepare.executeUpdate();
 
             if (totalAfecteds > 0 ){
+                isDelete = true;
                 JOptionPane.showMessageDialog(null,"The update was successful");
             }
         }catch (Exception e){
